@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin:0;
+}
+
+.page-actions-cont{
+    height: 3rem;
+    background-color: #16a085;
+    display: flex;
+    align-items: center;
+}
+.page-action{
+    padding: 0.9rem 1.5rem ;
+    color: aliceblue;
+}
+ 
+.cell-props-cont{
+    height: 3rem;
+    background-color: #ecf0f1 ;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.cell-props-cont > *{
+    display: inline-block; /*to set size*/
+    margin-right: 1rem;
+}
+
+.cell-props-cont > select{
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+
+.font-family-prop{
+    padding: 0.2rem;
+}
+.font-size-prop{
+    padding:0.2rem;
+}
+.formula-cont{
+    height: 2rem;
+    background-color: #ecf0f1;
+    padding-left: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.formula-cont > input{
+    border: none;
+    outline: none;
+    height: 70%;
+}
+
+.formula-cont > *{
+    display: inline-block;
+    /* margin-left: 0.7rem; */
+}
+
+.formula-cont .f-icon{
+    height: 1.2rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+.address-bar{
+    width: 5rem;
+    text-align: center;
+}
+
+.formula-bar{
+    width: calc(100vw - 8.9rem);
+}
+
+.grid-cont{
+    height: calc(100vh - 10.5rem);
+    background-color: #ffffff;
+    position: relative; /*to make this a parent for position=absolute child instead of whole body*/
+    overflow: scroll;
+}
+
+.sheet-cont{
+    height: 2.5rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    gap:1rem;
+}
+
+.sheet-cont > *{
+    display: inline-block;
+}
+
+.sheets-fold-cont{
+    height: 80%;
+    width: calc(100vw - 2vw);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+}
+.sheet-fold{
+    font-weight: bold;
+    text-decoration :underline;
+    text-decoration-thickness: 2px;  
+    font-size: 0.9rem;
+}
+
+.sheet-add-icon{
+    width: 2vw;
+}
+
+.dummy-cont{
+    height: 2rem;
+    width:2rem;
+    background-color: lightseagreen;
+    position:absolute;
+    top:0;
+    left: 0;
+}
+
+.cell-cont{
+    position: absolute;
+    top: 0;
+    left: 2rem;
+}
+
+.address-col-cont{
+    /* use sticky with top and left as we did in absolute as it depends upon the screen */
+    width: 2rem;
+    position:sticky;
+    top:2rem;
+    left: 0;
+}
+
+.address-row-cont{
+    flex-direction: row;
+    display: flex;
+    /* rel and fixed in flow */
+    position:sticky; 
+    top:0;
+    left:2rem;
+}
+
+.col-num{
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.row-character{
+    border: 1px solid black;
+    height: 2rem;
+    width: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty-cell-cont{
+    height: 2rem;
+    display: flex;
+}
+.empty-cell{  
+    height: 2rem;
+    width: 5rem;
+    border: 0.3px solid black;
+    outline: none;
+    overflow:hidden;
+    color:rgb(87, 83, 83);
+}
