@@ -25,7 +25,7 @@
             <option value="monospace">Monospace</option>
             <option value="sans-serif">Sans-Serif</option>
             <option value="fantasy">Fantasy</option>
-            <option value="arial">Arial</option>
+            <option value="cursive">Cursive</option>
         </select>
         <select class="font-size-prop">
             <option value="5">5</option>
@@ -33,15 +33,24 @@
             <option value="12">12</option>
             <option value="15">15</option>
         </select>
-        <span class="material-icons">format_bold</span>
-        <span class="material-icons ">format_italic</span>
-        <span class="material-icons">format_underlined</span>
-        <span class="material-icons">format_align_center</span>
-        <span class="material-icons">format_align_right</span>
-        <span class="material-icons">format_align_left</span>
-        <span class="material-icons">format_color_text</span>
-        <span class="material-icons">format_color_fill</span>
-
+        <span class="material-icons bold">format_bold</span>
+        <span class="material-icons italic">format_italic</span>
+        <span class="material-icons underline">format_underlined</span>
+        <span class="left material-icons alignment">format_align_left</span>
+        <span class="center material-icons alignment">format_align_center</span>
+        <span class="right material-icons alignment">format_align_right</span>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color-prop">
+        </div>
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="back-color-prop">
+        </div>
 
     </div>
     <div class="formula-cont">
@@ -65,9 +74,9 @@
                 Sheet1
             </div>
         </div>
-        
     </div>
 
-    <script src="script.js"></script>
+    <script src="gridForm.js"></script>
+    <script src="cellProp.js"></script>
 </body>
 </html>
