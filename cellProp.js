@@ -1,9 +1,9 @@
 let sheetDB= [];
 
 //rows in other file
-for(let i=0 ; i<=rows ; i++) {
+for(let i=0 ; i<rows ; i++) {
     let sheetRow=[];
-    for(let j=0 ; j<=cols ; j++) {
+    for(let j=0 ; j<cols ; j++) {
         let cellProp ={
             bold:false,
             italic:false,
@@ -12,11 +12,12 @@ for(let i=0 ; i<=rows ; i++) {
             fontFamily:"monospace",
             fontSize: "15",
             fontColor: "#000000", 
-            BGColor : "#ffffff"
+            BGColor : "#ffffff",
+            value:"",
+            formula:"",
         }
-
         sheetRow.push(cellProp);
-        }
+    }
     sheetDB.push(sheetRow);
 }
 
@@ -190,8 +191,6 @@ function addListnerCellProp(cell){
         }
     })
 }
-
-
 function activeCell(address){
     let [rid,cid]=decodeAdd(address);
     let cell = document.querySelector(`.empty-cell[rid='${rid}'][cid='${cid}']`);

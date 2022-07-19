@@ -43,10 +43,4 @@ function addressBarDisplay(cell,i,j){
         addBar.value= `${colId}${rowId}`;
     });
 }
-//to not get empty value start at cell 1 
-let flag=true;
-let firstcell = document.querySelector(".empty-cell");
-if (flag) {
-    firstcell.click();
-    flag=false;
-}
+

@@ -80,7 +80,7 @@ body{
 .grid-cont{
     height: calc(100vh - 10.5rem);
     background-color: #ffffff;
-    position: relative; /*to make this a parent for position=absolute child instead of whole body*/
+    position: relative; /*to make this a parent for child having position=absolute instead of whole body*/
     overflow: scroll;
 }
 
@@ -137,7 +137,7 @@ body{
     position:sticky;
     top:2rem;
     left: 0;
-    z-index: 5;
+    /* z-index: 50; */
 }
 
 .address-row-cont{
@@ -149,17 +149,21 @@ body{
     left:2rem;
 }
 
+/* .cell-cont .address-row-cont{
+    z-index: 10;
+} */
+
 .col-num{
     height: 2rem;
     width: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #D1CFCE;
 
 }
 .row-character{
-    border: 1px solid black;
+    border: 1px solid #D1CFCE;
     height: 2rem;
     width: 5rem;
     text-align: center;
@@ -171,13 +175,14 @@ body{
 .empty-cell-cont{
     height: 2rem;
     display: flex;
+    
 }
 .empty-cell{  
     height: 2rem;
     width: 5rem;
-    border: 0.3px solid black;
+    border: 0.3px solid #D1CFCE;
     outline: none;
-    overflow:hidden;
+    overflow: hidden;
     color:rgb(87, 83, 83);
 }
 .color-prop{
